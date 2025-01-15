@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Technical documentation for Python, covering features, basics, advanced concepts, and more.">
+
+ <link href="styles.css"rel="stylesheet">
+ <title>Technical Documentation</title>
+ </head>
+ <body>
+      <nav id="navbar">
+        <header>Python Docs</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Features">Features</a>
+        <a class="nav-link" href="#Basics">Basics</a>
+         <a class="nav-link" href="#Data_Types">Data Types</a>
+        <a class="nav-link" href="#Control_Structures">Control Structures</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+        <a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a>
+        <a class="nav-link" href="#Modules">Modules</a>
+        <a class="nav-link" href="#File_Handling">File Handling</a>
+        <a class="nav-link" href="#Error_Handling">Error Handling</a>
+        <a class="nav-link" href="#Popular_Libraries">Popular Libraries</a>
+        <a class="nav-link" href="#Advanced_Concepts">Advanced Concepts</a>
+        <a class="nav-link" href="#Ecosystem">Ecosystem</a>
+    </nav>
+
+      <main id="main-doc">
+           <h1>Python Technical Documentation</h1>
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>Python is a versatile programming language known for its simplicity and readability...</p>
+            <p>It supports multiple paradigms including object-oriented and functional programming...</p>
+        <p>Python is a high-level, interpreted programming language known for its simplicity and versatility. Designed with readability in mind, Python's syntax resembles plain English, making it an ideal choice for beginners and experienced developers alike. Whether you're developing web applications, analyzing data, building machine learning models, or automating repetitive tasks, Python offers tools and frameworks that simplify complex processes.
+
+</p>
+        </section>
+        <section id="Features" class="main-section">
+            <header>Features</header>
+            <p>Python boasts numerous features that make it a favorite among developers:</p>
+            <p>Python's key features set it apart from other programming languages. It supports multiple paradigms, including object-oriented, procedural, and functional programming, allowing developers to choose the style that suits their project. Python's extensive standard library offers modules for web development, file handling, mathematical operations, and more, reducing the need for external libraries.
+
+Another feature that makes Python popular is its strong integration capabilities with other languages and tools. Developers can embed Python scripts into larger applications, interact with databases, and even call C or C++ functions, making Python an excellent choice for full-stack development.</p>
+            <ul>
+                <li>Simple and readable syntax</li>
+                <li>Platform independence</li>
+                <li>Extensive library support</li>
+            </ul>
+        </section>
+        <section id="Basics" class="main-section">
+            <header>Basics</header>
+            <p>Learn the foundational elements of Python programming:</p>
+            <p>Example: Hello World</p>
+            <pre><code>print("Hello, World!")</code></pre>
+            <p>Example: If-Else Statement</p>
+            <pre><code>if x > 5:
+    print("Greater")
+else:
+    print("Smaller")</code></pre>
+        </section>
+        <section id="Data_Types" class="main-section">
+            <header>Data Types</header>
+            <p>Python provides various data types to work with:</p>
+            <ul>
+                <li><b>Numeric:</b> int, float, complex</li>
+                <li><b>Sequence:</b> str, list, tuple</li>
+                <li><b>Mapping:</b> dict</li>
+                <li><b>Set:</b> set, frozenset</li>
+                <li><b>Boolean:</b> bool</li>
+            </ul>
+            <p>Example:</p>
+            <pre><code>x = 10        # int
+y = 3.14      # float
+name = "Alice" # str</code></pre>
+        </section>
+        <section id="Control_Structures" class="main-section">
+            <header>Control Structures</header>
+            <p>Control structures in Python manage the flow of execution based on conditions or iterations. Python's indentation-based syntax makes the code concise and easy to understand.
+
+For instance, conditional statements (if, elif, else) evaluate conditions and execute code blocks accordingly. Loops (for, while) help in repetitive task automation, such as iterating over a list or processing file contents line by line.</p>
+            <p><b>Conditional Statements:</b></p>
+            <pre><code>if x > 10:
+    print("Greater")
+elif x == 10:
+    print("Equal")
+else:
+    print("Smaller")</code></pre>
+            <p><b>Loops:</b></p>
+            <pre><code>for i in range(5):
+    print(i)
+    
+while x > 0:
+    print(x)
+    x -= 1</code></pre>
+        </section>
+        <section id="Functions" class="main-section">
+            <header>Functions</header>
+            <p>Functions allow reusable code blocks:</p>
+            <pre><code>def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))</code></pre>
+        </section>
+        <section id="Object_Oriented_Programming" class="main-section">
+            <header>Object Oriented Programming</header>
+            <p>Python supports object-oriented programming with classes and objects:</p>
+            <pre><code>class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        return f"My name is {self.name} and I'm {self.age} years old."
+
+p = Person("Alice", 30)
+print(p.introduce())</code></pre>
+        </section>
+        <section id="Modules" class="main-section">
+            <header>Modules</header>
+            <p>Modules organize Python code into separate files:</p>
+            <pre><code># file: math_utils.py
+def add(a, b):
+    return a + b
+
+# usage
+from math_utils import add
+print(add(2, 3))</code></pre>
+        </section>
+        <section id="File_Handling" class="main-section">
+            <header>File Handling</header>
+            <p>Python makes it easy to work with files:</p>
+            <pre><code># Writing to a file
+with open("example.txt", "w") as f:
+    f.write("Hello, World!")
+
+# Reading a file
+with open("example.txt", "r") as f:
+    content = f.read()
+    print(content)</code></pre>
+        </section>
+        <section id="Error_Handling" class="main-section">
+
+            <header>Error Handling</header>
+            <p>Python's robust error-handling mechanisms ensure programs can recover gracefully from unexpected issues. By using try and except blocks, developers can capture specific errors, log them, and even provide alternative execution paths. This prevents the program from crashing abruptly, especially in applications that require continuous runtime, such as servers or automated bots.</p>
+            <p>Python uses try-except blocks for error handling:</p>
+            <pre><code>try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero.")</code></pre>
+        </section>
+        <section id="Popular_Libraries" class="main-section">
+            <header>Popular Libraries</header>
+            <p>Python's rich ecosystem includes libraries for every domain:</p>
+            <ul>
+                <li>Data Science: NumPy, Pandas</li>
+                <li>Machine Learning: TensorFlow, Scikit-learn</li>
+                <li>Web Development: Django, Flask</li>
+                <li>Automation: Selenium, PyAutoGUI</li>
+            </ul>
+        </section>
+        <section id="Advanced_Concepts" class="main-section">
+            <header>Advanced Concepts</header>
+            <p>Dive into more complex Python topics such as OOP and functional programming.</p>
+            <p>Example: Lambda Function</p>
+            <pre><code>square = lambda x: x * x</code></pre>
+        </section>
+        <section id="Ecosystem" class="main-section">
+            <header>Ecosystem</header>
+            <p>Python's rich ecosystem includes powerful libraries for various domains:</p>
+            <ul>
+                <li>Data Science: Pandas, NumPy</li>
+                <li>Machine Learning: Scikit-learn, TensorFlow</li>
+                <li>Web Development: Django, Flask</li>
+            </ul>
+        </section>     
+  <main>  
+  </body>
+  </html>
